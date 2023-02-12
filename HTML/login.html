@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../CSS/login.css ">        
+    <style>
+        body {
+    background-color: #7099ff;
+    text-align: center;
+}
+
+#frm {
+    background-color: #1f1f1f;
+    height: 400px;
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    text-align: center;
+    transform: translate(528px);
+}
+
+#frm #user-detail {
+    height: 200px;
+    width: auto;
+    transform: translate(0, 110px);
+}
+
+#frm #user-detail #user-name {
+    width: 230px;
+    height: 28px;
+    border-radius: 4px;
+    color: white;
+    background-color: #0f0f0f;
+    border-color: whitesmoke;
+    text-align: center;
+}
+
+#frm #user-detail #password {
+    width: 230px;
+    height: 28px;
+    border-radius: 4px;
+    color: white;
+    background-color: #0f0f0f;
+    border-color: whitesmoke;
+    text-align: center;
+}
+
+#login {
+    transform: translate(0, 100px);
+}
+
+#login button {
+    width: 70px;
+    height: 24px;
+    color: white;
+    background-color: #262626;
+    border-color: whitesmoke;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+#register button {
+    background-color: transparent;
+    border-color: transparent;
+    
+}
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+    <form id="frm" action="/home" method="post">
+        <div id="user-detail">
+            <input type="text" name="username" id="user-name" placeholder="Username" required> <br> <br>
+            <input type="text" name="password" id="password" placeholder="Password" required>
+        </div>
+        <div id="login">
+            <button type="submit">Login</button>
+        </div> 
+    </form>
+    <form action="/register" method="get">
+        <div id="register">
+            Don't have an account ? 
+            <button type="submit"><u>sign-in</u></button>
+        </div>
+    </form>
+</body>
+</html>

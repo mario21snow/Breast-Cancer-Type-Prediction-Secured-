@@ -1,0 +1,64 @@
+body {
+    background-color: #fffbd6;
+    text-align: center;
+}
+
+form {
+    background-color: #1f1f1f;
+    height: 400px;
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    text-align: center;
+    transform: translate(528px);
+}
+
+form #user-detail {
+    height: 200px;
+    width: auto;
+    transform: translate(0, 98px);
+}
+
+form #user-detail #email {
+    width: 230px;
+    height: 28px;
+    border-radius: 4px;
+    color: white;
+    background-color: #0f0f0f;
+    border-color: whitesmoke;
+    text-align: center;
+}
+
+form #user-detail #user-name {
+    width: 230px;
+    height: 28px;
+    border-radius: 4px;
+    color: white;
+    background-color: #0f0f0f;
+    border-color: whitesmoke;
+    text-align: center;
+}
+
+form #user-detail #password {
+    width: 230px;
+    height: 28px;
+    border-radius: 4px;
+    color: white;
+    background-color: #0f0f0f;
+    border-color: whitesmoke;
+    text-align: center;
+}
+
+#register {
+    transform: translate(0, 100px);
+}
+
+#register button {
+    width: 120px;
+    height: 26px;
+    color: white;
+    background-color: #262626;
+    border-color: whitesmoke;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}

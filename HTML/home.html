@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer Detection</title>
+    <link rel="stylesheet" href="../CSS/home.css">
+    <style>
+        body {
+    background-color: #d1ffdd;
+}
+
+h1 {
+    padding-top: 8px;
+    text-align: center;
+}
+
+form {
+    height: 80%;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    background-color: #dee2fc;
+    display: block;
+    transform: translate(73%, 50px);
+    text-align: center;
+}
+
+form input {
+    width: 255px;
+    height: 25px;
+    text-align: center;
+}
+
+form p {
+    font-size: 25px;
+}
+
+#btn {
+    width: 77px;
+    height: 28px;
+    background-color: #4a4a4a;
+    color: #ffffff;
+    font-size: medium;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+}
+    </style>
+</head>
+<body>
+    <h1
+    title="
+    A cancer that forms in the cells of the breasts. Breast cancer can occur in women and rarely in men. Symptoms of breast cancer include a lump in the breast, bloody discharge from the nipple and changes in the shape or texture of the nipple or breast. Its treatment depends on the stage of cancer. It may consist of chemotherapy, radiation, hormone therapy and surgery. A cancer can be detected but the type in early age is very difficult even for experienced doctors which can cause later treatment which might not be successfull. But the issue can be resolved or can be reduced by detecting using machine learning as it is trained on many data, which can be helpful for the cancer patients and can be treat.
+    ">Breast Cancer Prediction</h1>
+    <form action="/predict" method="post">
+        <h3>Input the given fields</h3>
+        <input type="number" pattern="[0-9]{1}" title="If any data is missing enter 0" name="rmean" placeholder="Enter Radius Mean" id="radius-mean" required> <br> <br>
+        <input type="number" pattern="[0-9]{1}" title="If any data is missing enter 0" name="pmean" placeholder="Enter Perimeter Mean" id="perimeter-mean" required> <br> <br>
+        <input type="number" pattern="[0-9]{1}" title="If any data is missing enter 0" name="amean" placeholder="Enter Area Mean" id="area-mean" required> <br> <br>
+        <input type="number" pattern="[0-9]{1}" title="If any data is missing enter 0" name="cmean" placeholder="Enter Concave Point Mean" id="concave-point-mean" required> <br> <br>
+        <input type="number" pattern="[0-9]{1}" title="If any data is missing enter 0" name="wmean" placeholder="Enter Worst Radius Mean" id="worst-radius-mean" required> <br> <br>
+        <input type="number" pattern="[0-9]{1}" title="If any data is missing enter 0" name="pwmean" placeholder="Enter Perimeter Worst Mean" id="perimeter-worst-mean" required> <br> <br>
+        <input type="number" pattern="[0-9]{1}" title="If any data is missing enter 0" name="awmean" placeholder="Enter Area Worst Mean" id="area-worst-mean" required> <br> <br>
+        <input type="number" pattern="[0-9]{1}" title="If any data is missing enter 0" name="cwmean" placeholder="Enter Conave Point Worst Mean" id="cp-worst-mean" required> <br> <br>
+        <button type="submit" id="btn">Predict</button>
+        <!-- <p id="result" title="Result">Result</p> -->
+    </form>
+</body>
+</html>

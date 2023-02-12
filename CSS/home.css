@@ -1,0 +1,38 @@
+body {
+    background-color: #d1ffdd;
+}
+
+h1 {
+    padding-top: 8px;
+    text-align: center;
+}
+
+form {
+    height: 70%;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    background-color: #dee2fc;
+    display: block;
+    transform: translate(50%, 75px);
+    text-align: center;
+}
+
+form input {
+    width: 255px;
+    height: 25px;
+    text-align: center;
+}
+
+form p {
+    font-size: 25px;
+}
+
+#btn {
+    width: 77px;
+    height: 28px;
+    background-color: #4a4a4a;
+    color: #ffffff;
+    font-size: medium;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+}
